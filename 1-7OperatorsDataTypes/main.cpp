@@ -68,17 +68,17 @@ int main()
 
     //While loop
     int i = 1;
-//    while (i <= 20) {
-//        cout << "Hello Daniel " << i << endl;
-//        i = i + 1;
-//    }
-    // or
-    do {
+    while (i <= 20) {
         cout << "Hello Daniel " << i << endl;
         i = i + 1;
-    } while (i <= 20);
+    }
+    // or
+//    do {
+//        cout << "Hello Daniel " << i << endl;
+//        i = i + 1;
+//    } while (i <= 20);
 
-    return 0;
+//    return 0;
 }
 
 /*
