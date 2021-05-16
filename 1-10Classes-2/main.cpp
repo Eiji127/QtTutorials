@@ -71,7 +71,7 @@ int main()
     Rectangle r1(20, 20);
     Para p(30, 30, 30);
     cout << "The area of the rectangle is : " << r1.getArea() << endl; // The area of the rectangle is : 400
-    cout << "The volume of our shape is : " << p.getVolume() << endl;
+    cout << "The volume of our shape is : " << p.getVolume() << endl; // The volume of our shape is : 27000
 
     return 0;
 }
