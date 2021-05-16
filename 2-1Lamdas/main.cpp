@@ -51,15 +51,15 @@ int main()
 
     //Capturing by value
     int c = 42;
-//    auto func2 = [c]() {
-//        cout << "The inner value of c is : " << c << endl;
-//    };
+    auto func2 = [c]() {
+        cout << "The inner value of c is : " << c << endl;
+    };
 
-//    for (int i = 1 ; i < 5 ; i++) {
-//        cout << "The outer value of c is : " << c << endl;
-//        func2();
-//        c = c + 1;
-//    }
+    for (int i = 1 ; i < 5 ; i++) {
+        cout << "The outer value of c is : " << c << endl;
+        func2();
+        c = c + 1;
+    }
     /*
      実行結果：
 The outer value of c is : 42
@@ -74,15 +74,15 @@ The inner value of c is : 42
      */
 
     //Capturing by reference
-//    auto func3 = [&c]() {
-//        cout << "The inner value of c is : " << c << endl;
-//    };
+    auto func3 = [&c]() {
+        cout << "The inner value of c is : " << c << endl;
+    };
 
-//    for (int i = 1 ; i < 5 ; i++) {
-//        cout << "The outer value of c is : " << c << endl;
-//        func3();
-//        c = c + 1;
-//    }
+    for (int i = 1 ; i < 5 ; i++) {
+        cout << "The outer value of c is : " << c << endl;
+        func3();
+        c = c + 1;
+    }
     /*
     実行結果：
 The outer value of c is : 42
@@ -98,16 +98,16 @@ The inner value of c is : 45
     //Capture everything by value
     int d = 6;
 
-//    auto func4 = [=]() {
-//        cout << "The inner value of c is : " << c << endl;
-//        cout << "The inner value of d is : " << d << endl;
-//    };
+    auto func4 = [=]() {
+        cout << "The inner value of c is : " << c << endl;
+        cout << "The inner value of d is : " << d << endl;
+    };
 
-//    for (int i = 1 ; i < 5 ; i++) {
-//        cout << "The outer value of c is : " << c << endl;
-//        func4();
-//        c = c + 1;
-//    }
+    for (int i = 1 ; i < 5 ; i++) {
+        cout << "The outer value of c is : " << c << endl;
+        func4();
+        c = c + 1;
+    }
     /*
      実行結果：
 The inner value of d is : 6
@@ -135,6 +135,22 @@ The inner value of d is : 6
         func5();
         c = c + 1;
     }
+    /*
+     実行結果：
+The outer value of c is : 42
+The inner value of c is : 42
+The inner value of d is : 6
+The outer value of c is : 43
+The inner value of c is : 43
+The inner value of d is : 6
+The outer value of c is : 44
+The inner value of c is : 44
+The inner value of d is : 6
+The outer value of c is : 45
+The inner value of c is : 45
+The inner value of d is : 6
+→ 使用する変数の値を取得、更新を行っている
+     */
 
     return 0;
 }
