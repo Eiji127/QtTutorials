@@ -11,6 +11,13 @@ public:
 
 signals:
 
+public slots:
+
+private slots:
+    void buttonClicked();
+
+private:
+    QSize sizeHint() const;
 };
 
 #endif // ROCKWIDGET_H
