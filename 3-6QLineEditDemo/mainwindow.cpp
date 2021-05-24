@@ -75,10 +75,27 @@ MainWindow::MainWindow(QWidget *parent)
 //    });
 
     // 4. selectionChanged
-    connect(firstNameLineEdit, &QLineEdit::selectionChanged, [=]() {
-        qDebug() << "Selection changed : ";
+//    connect(firstNameLineEdit, &QLineEdit::selectionChanged, [=]() {
+//        qDebug() << "Selection changed : ";
+//    });
+
+    // 5. textChanged
+//    connect(firstNameLineEdit, &QLineEdit::textChanged, [=]() {
+//        qDebug() << "Text Changed is : " << firstNameLineEdit->text();
+//    });
+
+    // 6. textEdited
+    connect(firstNameLineEdit, &QLineEdit::textEdited, [=]() {
+        qDebug() << "Text Edited and changed  to : " << firstNameLineEdit->text();
     });
 
+    // Change text in QLineEdit programmaticaly
+//    lastNameLineEdit->setText("Say your last name");
+
+    // Hint text
+    firstNameLineEdit->setPlaceholderText("First Name");
+    lastNameLineEdit->setPlaceholderText("Last Name");
+    cityLineEdit->setPlaceholderText("City Name");
 
 }
 
