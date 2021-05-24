@@ -99,7 +99,7 @@ void MainWindow::setUpUi() {
         qDebug() << "The html text inside the text edit is : " << textEdit->toHtml();
     });
 
-    setFixedSize(400, 400);
+    setFixedSize(400, 400); // Windowのサイズの指定
 }
 
 QSize MainWindow::sizeHint() const
