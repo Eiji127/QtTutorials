@@ -2,6 +2,9 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QList>
+#include <QColor>
+#include <QPushButton>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -15,7 +18,36 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
+private slots:
+    void on_pushButton_1_clicked();
+
+    void on_pushButton_5_clicked();
+
+    void on_pushButton_4_clicked();
+
+    void on_pushButton_7_clicked();
+
+    void on_pushButton_6_clicked();
+
+    void on_pushButton_8_clicked();
+
+    void on_pushButton_2_clicked();
+
+    void on_pushButton_9_clicked();
+
+    void on_pushButton_3_clicked();
+
+    void on_loadColorsButton_clicked();
+
+    void on_saveColorsButton_clicked();
+
 private:
     Ui::MainWindow *ui;
+    QList<QColor> colorList;
+
+    void saveColor(QString key, QColor color);
+    QColor loadColor(QString key);
+
+    void setLoadedColor(QString key, int index, QPushButton * button);
 };
 #endif // MAINWINDOW_H
