@@ -15,15 +15,6 @@ public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
 
-private slots:
-    void on_writeButton_clicked();
-
-    void on_readButton_clicked();
-
-    void on_selectFileButton_clicked();
-
-    void on_copyButton_clicked();
-
 private:
     Ui::MainWindow *ui;
 };
