@@ -2,6 +2,7 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QListWidget>
 
 QT_BEGIN_NAMESPACE
 namespace Ui { class MainWindow; }
@@ -14,6 +15,17 @@ class MainWindow : public QMainWindow
 public:
     MainWindow(QWidget *parent = nullptr);
     ~MainWindow();
+
+private slots:
+    void on_chooseDirButton_clicked();
+
+    void on_createDirButton_clicked();
+
+    void on_dirExistsButton_clicked();
+
+    void on_dirOrfileButton_clicked();
+
+    void on_folderContentsButton_clicked();
 
 private:
     Ui::MainWindow *ui;
