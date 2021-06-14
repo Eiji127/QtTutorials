@@ -98,7 +98,8 @@ void MainWindow::on_folderContentsButton_clicked()
         if (fileList.at(i).isDir()) {
             prefix = "DIRECTORY : ";
         }
-        ui->listWidget->addItem(fileList.at(i).absoluteFilePath());
+        ui->listWidget->addItem(
+                    fileList.at(i).absoluteFilePath());
     }
 }
 
