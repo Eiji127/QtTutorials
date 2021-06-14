@@ -47,3 +47,5 @@ build-8-1QFile-Desktop_x86_darwin_generic_mach_o_64bit-Debug/
 build-9-2QDir-Desktop_x86_darwin_generic_mach_o_32bit-Debug/
 build-10-1QModelIndex-Desktop_x86_darwin_generic_mach_o_32bit-Debug/
 build-10-2QFileSystemModel-Desktop_x86_darwin_generic_mach_o_32bit-Debug/
+build-10-3QStandardItemModel-Desktop_x86_darwin_generic_mach_o_32bit-Debug/
+build-QStringListModel-Desktop_x86_darwin_generic_mach_o_32bit-Debug/
